@@ -8,7 +8,8 @@ async function getList(req, res) {
     const title = "your id is " + idNum
     let status = 200
     //res.status(status).json({data: title}).end();
-    res.send({data: title});
+    res.status(status).send({data: title}).end()
+    //res.send({data: title});
 }
 
 module.exports = router;
